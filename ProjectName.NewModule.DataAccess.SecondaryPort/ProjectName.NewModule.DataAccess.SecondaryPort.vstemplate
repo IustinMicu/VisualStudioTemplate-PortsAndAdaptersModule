@@ -3,7 +3,7 @@
     <Project TargetFileName="$ext_ApplicationName$.$ext_NewModuleName$.DataAccess.SecondaryPort.csproj" File="ProjectName.NewModule.DataAccess.SecondaryPort.csproj" ReplaceParameters="true">
       <Folder Name="DataAccess" TargetFolderName="DataAccess">
         <Folder Name="Interfaces" TargetFolderName="Interfaces">
-          <ProjectItem ReplaceParameters="true" TargetFileName="INewModuleRepository.cs">INewModuleRepository.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="I$ext_NewModuleName$Repository.cs">INewModuleRepository.cs</ProjectItem>
         </Folder>
       </Folder>
       <Folder Name="Properties" TargetFolderName="Properties">

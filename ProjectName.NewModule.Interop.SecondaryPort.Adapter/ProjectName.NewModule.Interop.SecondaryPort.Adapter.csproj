@@ -123,7 +123,7 @@
   <ItemGroup>
     <Compile Include="DependencyInjectionConfiguration.cs" />
     <Compile Include="InteropOtherModuleManager.cs" />
-    <Compile Include="Mappings\NewModuleDomainInteropProfile.cs" />
+    <Compile Include="Mappings\$ext_NewModuleName$DomainInteropProfile.cs" />
     <Compile Include="MockedDataFromOtherModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

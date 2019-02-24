@@ -2,12 +2,12 @@
 {
     // Mocks the actual manager from the remote 'Other' module
     // TODO: Remove
-    public interface IOtherModuleInteropNewModuleManager
+    public interface IOtherModuleInterop$ext_NewModuleName$Manager
     {
         DummyInterop Get();
     }
 
-    public class OtherModuleInteropNewModuleManager : IOtherModuleInteropNewModuleManager
+    public class OtherModuleInterop$ext_NewModuleName$Manager : IOtherModuleInterop$ext_NewModuleName$Manager
     {
         public DummyInterop Get()
         {

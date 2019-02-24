@@ -122,8 +122,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DependencyInjectionConfiguration.cs" />
-    <Compile Include="Mappings\NewModuleInteropDomainProfile.cs" />
-    <Compile Include="NewModuleInteropOtherModuleManager.cs" />
+    <Compile Include="Mappings\$ext_NewModuleName$InteropDomainProfile.cs" />
+    <Compile Include="$ext_NewModuleName$InteropOtherModuleManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

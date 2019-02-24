@@ -10,27 +10,20 @@ namespace $ext_ApplicationName$.$ext_NewModuleName$.ExternalServices.SecondaryPo
 {
     public static class DependencyInjectionConfiguration
     {
-        public static void AddNewModuleExternalServicesecondaryPort(this IServiceCollection serviceCollection)
+        public static void Add$ext_NewModuleName$ExternalServicesSecondaryPort(this IServiceCollection serviceCollection)
         {
-            AddNewModuleExternalServicesManagers(serviceCollection);
-            AddNewModuleExternalServicesMappings(serviceCollection);
+            Add$ext_NewModuleName$ExternalServicesManagers(serviceCollection);
+            Add$ext_NewModuleName$ExternalServicesMappings(serviceCollection);
         }
 
-        private static void AddNewModuleExternalServicesManagers(IServiceCollection serviceCollection)
+        private static void Add$ext_NewModuleName$ExternalServicesManagers(IServiceCollection serviceCollection)
         {
             serviceCollection.AddScoped<IDummyExternalServiceManager, DummyExternalServiceManager>();
         }
 
-        private static void AddNewModuleExternalServicesMappings(IServiceCollection serviceCollection)
+        private static void Add$ext_NewModuleName$ExternalServicesMappings(IServiceCollection serviceCollection)
         {
-            //var profiles = Assembly.GetExecutingAssembly().GetTypes().Where(x => x.IsSubclassOf(typeof(Profile)));
-
-            //foreach (var profile in profiles)
-            //{
-            //    Mapper.Initialize(cfg => cfg.AddProfile(Activator.CreateInstance(profile) as Profile));
-            //}
-
-            Mapper.AddProfile<NewModuleExternalServicesProfile>();
+            Mapper.AddProfile<$ext_NewModuleName$ExternalServicesProfile>();
         }
     }
 }

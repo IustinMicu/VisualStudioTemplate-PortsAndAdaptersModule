@@ -7,16 +7,16 @@ namespace $ext_ApplicationName$.$ext_NewModuleName$.Interop.SecondaryPort.Adapte
 {
     public class InteropOtherModuleManager : IInteropOtherModuleManager
     {
-        private readonly IOtherModuleInteropNewModuleManager otherModuleInteropNewModuleManager;
+        private readonly IOtherModuleInterop$ext_NewModuleName$Manager otherModuleInterop$ext_NewModuleName$Manager;
 
-        public InteropOtherModuleManager(IOtherModuleInteropNewModuleManager otherModuleInteropNewModuleManager)
+        public InteropOtherModuleManager(IOtherModuleInterop$ext_NewModuleName$Manager otherModuleInterop$ext_NewModuleName$Manager)
         {
-            this.otherModuleInteropNewModuleManager = otherModuleInteropNewModuleManager;
+            this.otherModuleInterop$ext_NewModuleName$Manager = otherModuleInterop$ext_NewModuleName$Manager;
         }
 
         public DummyModel Get()
         {
-            var dummyInterop = this.otherModuleInteropNewModuleManager.Get();
+            var dummyInterop = this.otherModuleInterop$ext_NewModuleName$Manager.Get();
             var dummyModel = Mapper.Map<DummyModel>(dummyInterop);
 
             return dummyModel;

@@ -134,9 +134,9 @@
       <Project>{A687AE4D-2672-40DF-B336-2577C1E01054}</Project>
       <Name>$ext_ApplicationName$.$ext_NewModuleName$.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\$ext_ApplicationName$.$ext_NewModuleName$.ExternalServicess.SecondaryPort.Adapter\$ext_ApplicationName$.$ext_NewModuleName$.ExternalServicess.SecondaryPort.Adapter.csproj">
+    <ProjectReference Include="..\$ext_ApplicationName$.$ext_NewModuleName$.ExternalServices.SecondaryPort.Adapter\$ext_ApplicationName$.$ext_NewModuleName$.ExternalServices.SecondaryPort.Adapter.csproj">
       <Project>{E592055C-FC8E-4BF6-8DFF-F4B1C5D6D8A1}</Project>
-      <Name>$ext_ApplicationName$.$ext_NewModuleName$.ExternalServicess.SecondaryPort.Adapter</Name>
+      <Name>$ext_ApplicationName$.$ext_NewModuleName$.ExternalServices.SecondaryPort.Adapter</Name>
     </ProjectReference>
     <ProjectReference Include="..\$ext_ApplicationName$.$ext_NewModuleName$.Interop.PrimaryPort.Adapter\$ext_ApplicationName$.$ext_NewModuleName$.Interop.PrimaryPort.Adapter.csproj">
       <Project>{06DEF409-A232-44F9-966A-054BE6E49F26}</Project>

@@ -5,7 +5,7 @@ using $ext_ApplicationName$.$ext_NewModuleName$.Entities;
 
 namespace $ext_ApplicationName$.$ext_NewModuleName$.DataAccess.SecondaryPort.DataAccess.Interfaces
 {
-    public interface INewModuleRepository<TEntity> where TEntity : BaseEntity
+    public interface I$ext_NewModuleName$Repository<TEntity> where TEntity : BaseEntity
     {
         TEntity GetById(Guid id);
 

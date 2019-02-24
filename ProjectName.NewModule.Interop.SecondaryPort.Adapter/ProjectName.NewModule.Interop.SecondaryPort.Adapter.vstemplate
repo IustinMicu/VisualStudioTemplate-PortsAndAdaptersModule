@@ -2,7 +2,7 @@
   <TemplateContent>
     <Project TargetFileName="$ext_ApplicationName$.$ext_NewModuleName$.Interop.SecondaryPort.Adapter.csproj" File="ProjectName.NewModule.Interop.SecondaryPort.Adapter.csproj" ReplaceParameters="true">
       <Folder Name="Mappings" TargetFolderName="Mappings">
-        <ProjectItem ReplaceParameters="true" TargetFileName="NewModuleDomainInteropProfile.cs">NewModuleDomainInteropProfile.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_NewModuleName$DomainInteropProfile.cs">NewModuleDomainInteropProfile.cs</ProjectItem>
       </Folder>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>

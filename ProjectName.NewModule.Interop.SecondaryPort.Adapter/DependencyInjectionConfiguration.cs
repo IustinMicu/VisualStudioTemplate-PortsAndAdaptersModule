@@ -10,13 +10,13 @@ namespace $ext_ApplicationName$.$ext_NewModuleName$.Interop.SecondaryPort.Adapte
 {
     public static class DependencyInjectionConfiguration
     {
-        public static void AddNewModuleInteropSecondaryPort(this IServiceCollection serviceCollection)
+        public static void Add$ext_NewModuleName$InteropSecondaryPort(this IServiceCollection serviceCollection)
         {
             AddInteropOtherModuleManagers(serviceCollection);
             AddInteropOtherModuleMappings(serviceCollection);
 
             // TODO: Remove
-            serviceCollection.AddScoped<IOtherModuleInteropNewModuleManager, OtherModuleInteropNewModuleManager>();
+            serviceCollection.AddScoped<IOtherModuleInterop$ext_NewModuleName$Manager, OtherModuleInterop$ext_NewModuleName$Manager>();
         }
 
         private static void AddInteropOtherModuleManagers(IServiceCollection serviceCollection)
@@ -26,14 +26,7 @@ namespace $ext_ApplicationName$.$ext_NewModuleName$.Interop.SecondaryPort.Adapte
 
         private static void AddInteropOtherModuleMappings(IServiceCollection serviceCollection)
         {
-            //var profiles = Assembly.GetExecutingAssembly().GetTypes().Where(x => x.IsSubclassOf(typeof(Profile)));
-
-            //foreach (var profile in profiles)
-            //{
-            //    Mapper.Initialize(cfg => cfg.AddProfile(Activator.CreateInstance(profile) as Profile));
-            //}
-
-            Mapper.AddProfile<NewModuleDomainInteropProfile>();
+            Mapper.AddProfile<$ext_NewModuleName$DomainInteropProfile>();
         }
     }
 }

@@ -10,27 +10,20 @@ namespace $ext_ApplicationName$.$ext_NewModuleName$.Web.PrimaryPort.Adapter
 {
     public static class DependencyInjectionConfiguration
     {
-        public static void AddNewModuleWebPrimaryPort(this IServiceCollection serviceCollection)
+        public static void Add$ext_NewModuleName$WebPrimaryPort(this IServiceCollection serviceCollection)
         {
-            AddNewModuleWebManagers(serviceCollection);
-            AddNewModuleWebMappings(serviceCollection);
+            Add$ext_NewModuleName$WebManagers(serviceCollection);
+            Add$ext_NewModuleName$WebMappings(serviceCollection);
         }
 
-        private static void AddNewModuleWebManagers(IServiceCollection serviceCollection)
+        private static void Add$ext_NewModuleName$WebManagers(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddScoped<INewModuleWebManager, NewModuleWebManager>();
+            serviceCollection.AddScoped<I$ext_NewModuleName$WebManager, $ext_NewModuleName$WebManager>();
         }
 
-        private static void AddNewModuleWebMappings(IServiceCollection serviceCollection)
+        private static void Add$ext_NewModuleName$WebMappings(IServiceCollection serviceCollection)
         {
-            //var profiles = Assembly.GetExecutingAssembly().GetTypes().Where(x => x.IsSubclassOf(typeof(Profile)));
-
-            //foreach (var profile in profiles)
-            //{
-            //    Mapper.Initialize(cfg => cfg.AddProfile(Activator.CreateInstance(profile) as Profile));
-            //}
-
-            Mapper.AddProfile<NewModuleWebDomainProfile>();
+            Mapper.AddProfile<$ext_NewModuleName$WebDomainProfile>();
         }
     }
 }

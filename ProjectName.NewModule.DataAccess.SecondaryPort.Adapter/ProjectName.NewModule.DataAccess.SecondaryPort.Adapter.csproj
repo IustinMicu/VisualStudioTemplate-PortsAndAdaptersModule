@@ -134,8 +134,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\NewModuleDbContext.cs" />
-    <Compile Include="DataAccess\NewModuleRepository.cs" />
+    <Compile Include="DataAccess\$ext_NewModuleName$DbContext.cs" />
+    <Compile Include="DataAccess\$ext_NewModuleName$Repository.cs" />
     <Compile Include="DependencyInjectionConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

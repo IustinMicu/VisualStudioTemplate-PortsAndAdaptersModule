@@ -122,8 +122,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DependencyInjectionConfiguration.cs" />
-    <Compile Include="Mappings\NewModuleWebDomainProfile.cs" />
-    <Compile Include="NewModuleWebManager.cs" />
+    <Compile Include="Mappings\$ext_NewModuleName$WebDomainProfile.cs" />
+    <Compile Include="$ext_NewModuleName$WebManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -8,16 +8,16 @@ namespace $ext_ApplicationName$.$ext_NewModuleName$.Domain.DomainServices
 {
     public class DummyService : IDummyService
     {
-        private readonly INewModuleRepository<DummyEntity> repository;
+        private readonly I$ext_NewModuleName$Repository<DummyEntity> repository;
         private readonly IInteropOtherModuleManager otherModuleManager;
         private readonly IDummyExternalServiceManager externalServiceManager;
 
         public DummyService(
-            INewModuleRepository<DummyEntity> newModuleRepository,
+            I$ext_NewModuleName$Repository<DummyEntity> repository,
             IInteropOtherModuleManager otherModuleManager,
             IDummyExternalServiceManager externalServiceManager)
         {
-            this.repository = newModuleRepository;
+            this.repository = repository;
             this.otherModuleManager = otherModuleManager;
             this.externalServiceManager = externalServiceManager;
         }

@@ -2,9 +2,9 @@
 
 namespace $ext_ApplicationName$.$ext_NewModuleName$.ExternalServices.SecondaryPort.Adapter.Mappings
 {
-    public class NewModuleExternalServicesProfile : Profile
+    public class $ext_NewModuleName$ExternalServicesProfile : Profile
     {
-        public NewModuleExternalServicesProfile()
+        public $ext_NewModuleName$ExternalServicesProfile()
         {
         }
     }

@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\INewModuleInteropOtherModuleManager.cs" />
+    <Compile Include="Interfaces\I$ext_NewModuleName$InteropOtherModuleManager.cs" />
     <Compile Include="Models\DummyModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

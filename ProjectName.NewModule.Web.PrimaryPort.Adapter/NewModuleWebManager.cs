@@ -6,11 +6,11 @@ using $ext_ApplicationName$.$ext_NewModuleName$.Web.PrimaryPort.Models;
 
 namespace $ext_ApplicationName$.$ext_NewModuleName$.Web.PrimaryPort.Adapter
 {
-    public class NewModuleWebManager : INewModuleWebManager
+    public class $ext_NewModuleName$WebManager : I$ext_NewModuleName$WebManager
     {
         private readonly IDummyService dummyService;
 
-        public NewModuleWebManager(IDummyService dummyService)
+        public $ext_NewModuleName$WebManager(IDummyService dummyService)
         {
             this.dummyService = dummyService;
         }

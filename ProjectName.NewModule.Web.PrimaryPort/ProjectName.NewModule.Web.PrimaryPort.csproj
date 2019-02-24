@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\INewModuleWebManager.cs" />
+    <Compile Include="Interfaces\I$ext_NewModuleName$WebManager.cs" />
     <Compile Include="Models\DummyModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -6,7 +6,7 @@ namespace $ext_ApplicationName$.$ext_NewModuleName$.Domain
 {
     public static class DependencyInjectionConfiguration
     {
-        public static void AddNewModuleDomain(this IServiceCollection serviceCollection)
+        public static void Add$ext_NewModuleName$Domain(this IServiceCollection serviceCollection)
         {
             AddDomainServices(serviceCollection);
         }

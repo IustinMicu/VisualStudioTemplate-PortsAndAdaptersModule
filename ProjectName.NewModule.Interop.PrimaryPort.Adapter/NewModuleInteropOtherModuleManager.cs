@@ -6,11 +6,11 @@ using $ext_ApplicationName$.$ext_NewModuleName$.Interop.PrimaryPort.Models;
 
 namespace $ext_ApplicationName$.$ext_NewModuleName$.Interop.PrimaryPort.Adapter
 {
-    public class NewModuleInteropOtherModuleManager : INewModuleInteropOtherModuleManager
+    public class $ext_NewModuleName$InteropOtherModuleManager : I$ext_NewModuleName$InteropOtherModuleManager
     {
         private readonly IDummyService dummyService;
 
-        public NewModuleInteropOtherModuleManager(IDummyService dummyService)
+        public $ext_NewModuleName$InteropOtherModuleManager(IDummyService dummyService)
         {
             this.dummyService = dummyService;
         }

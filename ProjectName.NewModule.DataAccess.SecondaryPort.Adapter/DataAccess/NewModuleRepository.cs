@@ -8,13 +8,13 @@ using $ext_ApplicationName$.$ext_NewModuleName$.Entities;
 
 namespace $ext_ApplicationName$.$ext_NewModuleName$.DataAccess.SecondaryPort.Adapter.DataAccess
 {
-    public class NewModuleRepository<TEntity> : INewModuleRepository<TEntity> where TEntity : BaseEntity
+    public class $ext_NewModuleName$Repository<TEntity> : I$ext_NewModuleName$Repository<TEntity> where TEntity : BaseEntity
     {
-        private readonly NewModuleDbContext dbContext;
+        private readonly $ext_NewModuleName$DbContext dbContext;
 
-        public NewModuleRepository(NewModuleDbContext newModuleDbContext)
+        public $ext_NewModuleName$Repository($ext_NewModuleName$DbContext dbContext)
         {
-            this.dbContext = newModuleDbContext;
+            this.dbContext = dbContext;
         }
 
         public TEntity GetById(Guid id)

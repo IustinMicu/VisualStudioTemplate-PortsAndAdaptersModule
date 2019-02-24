@@ -2,8 +2,8 @@
   <TemplateContent>
     <Project TargetFileName="$ext_ApplicationName$.$ext_NewModuleName$.DataAccess.SecondaryPort.Adapter.csproj" File="ProjectName.NewModule.DataAccess.SecondaryPort.Adapter.csproj" ReplaceParameters="true">
       <Folder Name="DataAccess" TargetFolderName="DataAccess">
-        <ProjectItem ReplaceParameters="true" TargetFileName="NewModuleDbContext.cs">NewModuleDbContext.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="NewModuleRepository.cs">NewModuleRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_NewModuleName$DbContext.cs">NewModuleDbContext.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_NewModuleName$Repository.cs">NewModuleRepository.cs</ProjectItem>
       </Folder>      
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>

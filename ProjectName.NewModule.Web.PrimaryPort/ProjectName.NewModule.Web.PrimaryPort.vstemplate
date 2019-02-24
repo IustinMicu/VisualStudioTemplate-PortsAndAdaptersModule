@@ -5,7 +5,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="DummyModel.cs">DummyModel.cs</ProjectItem>
       </Folder>
       <Folder Name="Interfaces" TargetFolderName="Interfaces">
-        <ProjectItem ReplaceParameters="true" TargetFileName="INewModuleWebManager.cs">INewModuleWebManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="I$ext_NewModuleName$WebManager.cs">INewModuleWebManager.cs</ProjectItem>
       </Folder>
 
       <Folder Name="Properties" TargetFolderName="Properties">

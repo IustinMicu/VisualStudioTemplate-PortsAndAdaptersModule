@@ -2,7 +2,7 @@
 
 namespace $ext_ApplicationName$.$ext_NewModuleName$.Interop.PrimaryPort.Interfaces
 {
-    public interface INewModuleInteropOtherModuleManager
+    public interface I$ext_NewModuleName$InteropOtherModuleManager
     {
         DummyModel Get();
     }

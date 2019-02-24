@@ -3,11 +3,11 @@ using $ext_ApplicationName$.$ext_NewModuleName$.Entities;
 
 namespace $ext_ApplicationName$.$ext_NewModuleName$.DataAccess.SecondaryPort.Adapter.DataAccess
 {
-    public class NewModuleDbContext: DbContext
+    public class $ext_NewModuleName$DbContext: DbContext
     {
         internal DbSet<DummyEntity> Dummies { get; set; }
 
-        public NewModuleDbContext(string connectionString)
+        public $ext_NewModuleName$DbContext(string connectionString)
             : base(connectionString)
         {
         }

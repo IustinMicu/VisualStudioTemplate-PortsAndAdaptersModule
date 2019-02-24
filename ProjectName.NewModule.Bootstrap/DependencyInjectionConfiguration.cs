@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using $ext_ApplicationName$.$ext_NewModuleName$.DataAccess.SecondaryPort.Adapter;
 using $ext_ApplicationName$.$ext_NewModuleName$.Domain;
-using $ext_ApplicationName$.$ext_NewModuleName$.ExternalServicess.SecondaryPort.Adapter;
+using $ext_ApplicationName$.$ext_NewModuleName$.ExternalServices.SecondaryPort.Adapter;
 using $ext_ApplicationName$.$ext_NewModuleName$.Interop.PrimaryPort.Adapter;
 using $ext_ApplicationName$.$ext_NewModuleName$.Interop.SecondaryPort.Adapter;
 using $ext_ApplicationName$.$ext_NewModuleName$.Web.PrimaryPort.Adapter;
@@ -10,19 +10,19 @@ namespace $ext_ApplicationName$.$ext_NewModuleName$.Bootstrap
 {
     public static class DependencyInjectionConfiguration
     {
-        public static IServiceCollection AddNewModuleModule(this IServiceCollection serviceCollection, string connectionString)
+        public static IServiceCollection Add$ext_NewModuleName$Module(this IServiceCollection serviceCollection, string connectionString)
         {
             // Secondary ports
-            serviceCollection.AddNewModuleDataAccessSecondaryPort(connectionString);
-            serviceCollection.AddNewModuleInteropSecondaryPort();
-            serviceCollection.AddNewModuleExternalServicesSecondaryPort();
+            serviceCollection.Add$ext_NewModuleName$DataAccessSecondaryPort(connectionString);
+            serviceCollection.Add$ext_NewModuleName$InteropSecondaryPort();
+            serviceCollection.Add$ext_NewModuleName$ExternalServicesSecondaryPort();
 
             // Domain
-            serviceCollection.AddNewModuleDomain();
+            serviceCollection.Add$ext_NewModuleName$Domain();
 
             // Primary ports
-            serviceCollection.AddNewModuleWebPrimaryPort();
-            serviceCollection.AddNewModuleInteropPrimaryPort();
+            serviceCollection.Add$ext_NewModuleName$WebPrimaryPort();
+            serviceCollection.Add$ext_NewModuleName$InteropPrimaryPort();
 
             return serviceCollection;
         }

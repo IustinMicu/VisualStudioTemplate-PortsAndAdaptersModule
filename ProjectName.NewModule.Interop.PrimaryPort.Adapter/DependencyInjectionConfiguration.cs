@@ -10,27 +10,20 @@ namespace $ext_ApplicationName$.$ext_NewModuleName$.Interop.PrimaryPort.Adapter
 {
     public static class DependencyInjectionConfiguration
     {
-        public static void AddNewModuleInteropPrimaryPort(this IServiceCollection serviceCollection)
+        public static void Add$ext_NewModuleName$InteropPrimaryPort(this IServiceCollection serviceCollection)
         {
-            AddNewModuleInteropManagers(serviceCollection);
-            AddNewModuleInteropMappings(serviceCollection);
+            Add$ext_NewModuleName$InteropManagers(serviceCollection);
+            Add$ext_NewModuleName$InteropMappings(serviceCollection);
         }
 
-        private static void AddNewModuleInteropManagers(IServiceCollection serviceCollection)
+        private static void Add$ext_NewModuleName$InteropManagers(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddScoped<INewModuleInteropOtherModuleManager, NewModuleInteropOtherModuleManager>();
+            serviceCollection.AddScoped<I$ext_NewModuleName$InteropOtherModuleManager, $ext_NewModuleName$InteropOtherModuleManager>();
         }
 
-        private static void AddNewModuleInteropMappings(IServiceCollection serviceCollection)
+        private static void Add$ext_NewModuleName$InteropMappings(IServiceCollection serviceCollection)
         {
-            //var profiles = Assembly.GetExecutingAssembly().GetTypes().Where(x => x.IsSubclassOf(typeof(Profile)));
-
-            //foreach (var profile in profiles)
-            //{
-            //    Mapper.Initialize(cfg => cfg.AddProfile(Activator.CreateInstance(profile) as Profile));
-            //}
-
-            Mapper.AddProfile<NewModuleInteropDomainProfile>();
+            Mapper.AddProfile<$ext_NewModuleName$InteropDomainProfile>();
         }
     }
 }
