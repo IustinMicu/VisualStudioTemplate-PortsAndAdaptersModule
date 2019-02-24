@@ -1,0 +1,18 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateContent>
+    <Project TargetFileName="$ext_ApplicationName$.$ext_NewModuleName$.Interop.SecondaryPort.Adapter.csproj" File="ProjectName.NewModule.Interop.SecondaryPort.Adapter.csproj" ReplaceParameters="true">
+      <Folder Name="Mappings" TargetFolderName="Mappings">
+        <ProjectItem ReplaceParameters="true" TargetFileName="NewModuleDomainInteropProfile.cs">NewModuleDomainInteropProfile.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="DependencyInjectionConfiguration.cs">DependencyInjectionConfiguration.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="InteropOtherModuleManager.cs">InteropOtherModuleManager.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MockedDataFromOtherModule.cs">MockedDataFromOtherModule.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,17 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateContent>
+    <Project TargetFileName="$ext_ApplicationName$.$ext_NewModuleName$.ExternalServices.SecondaryPort.Adapter.csproj" File="ProjectName.NewModule.ExternalServices.SecondaryPort.Adapter.csproj" ReplaceParameters="true">
+      <Folder Name="Mappings" TargetFolderName="Mappings">
+        <ProjectItem ReplaceParameters="true" TargetFileName="NewModuleExternalServicesProfile.cs">NewModuleExternalServicesProfile.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="DependencyInjectionConfiguration.cs">DependencyInjectionConfiguration.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="DummyExternalServiceManager.cs">DummyExternalServiceManager.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

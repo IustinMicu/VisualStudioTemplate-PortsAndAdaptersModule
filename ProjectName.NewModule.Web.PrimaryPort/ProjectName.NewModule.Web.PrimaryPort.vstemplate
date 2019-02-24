@@ -1,0 +1,16 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateContent>
+    <Project TargetFileName="$ext_ApplicationName$.$ext_NewModuleName$.Web.PrimaryPort.csproj" File="ProjectName.NewModule.Web.PrimaryPort.csproj" ReplaceParameters="true">
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DummyModel.cs">DummyModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Interfaces" TargetFolderName="Interfaces">
+        <ProjectItem ReplaceParameters="true" TargetFileName="INewModuleWebManager.cs">INewModuleWebManager.cs</ProjectItem>
+      </Folder>
+
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

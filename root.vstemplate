@@ -1,0 +1,75 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Ports and Adapters Module</Name>
+    <DefaultName>NewModule</DefaultName>
+    <Description>A project for creating a custom Ports and Adapters Module.
+                 
+By Iustin Micu</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>false</CreateNewFolder>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Hidden</LocationField>
+    <EnableLocationBrowseButton>false</EnableLocationBrowseButton>
+    <Icon>New_module_icon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <CustomParameters>
+      <CustomParameter Name="$ApplicationName$" Value="MyApp"/>
+      <CustomParameter Name="$NewModuleName$" Value="MyModule"/>
+    </CustomParameters>
+
+    <ProjectCollection>
+      <SolutionFolder Name="$NewModuleName$">
+        <SolutionFolder Name="PrimaryPorts">
+          <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.Interop.PrimaryPort" CopyParameters="true">
+            ProjectName.NewModule.Interop.PrimaryPort\ProjectName.NewModule.Interop.PrimaryPort.vstemplate
+          </ProjectTemplateLink>
+          <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.Interop.PrimaryPort.Adapter" CopyParameters="true">
+            ProjectName.NewModule.Interop.PrimaryPort.Adapter\ProjectName.NewModule.Interop.PrimaryPort.Adapter.vstemplate
+          </ProjectTemplateLink>
+          <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.Web.PrimaryPort" CopyParameters="true">
+            ProjectName.NewModule.Web.PrimaryPort\ProjectName.NewModule.Web.PrimaryPort.vstemplate
+          </ProjectTemplateLink>
+          <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.Web.PrimaryPort.Adapter" CopyParameters="true">
+            ProjectName.NewModule.Web.PrimaryPort.Adapter\ProjectName.NewModule.Web.PrimaryPort.Adapter.vstemplate
+          </ProjectTemplateLink>
+        </SolutionFolder>
+
+        <SolutionFolder Name="SecondaryPorts">
+          <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.DataAccess.SecondaryPort" CopyParameters="true">
+            ProjectName.NewModule.DataAccess.SecondaryPort\ProjectName.NewModule.DataAccess.SecondaryPort.vstemplate
+          </ProjectTemplateLink>
+          <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.DataAccess.SecondaryPort.Adapter" CopyParameters="true">
+            ProjectName.NewModule.DataAccess.SecondaryPort.Adapter\ProjectName.NewModule.DataAccess.SecondaryPort.Adapter.vstemplate
+          </ProjectTemplateLink>
+          <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.ExternalServices.SecondaryPort" CopyParameters="true">
+            ProjectName.NewModule.ExternalServices.SecondaryPort\ProjectName.NewModule.ExternalServices.SecondaryPort.vstemplate
+          </ProjectTemplateLink>
+          <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.ExternalServices.SecondaryPort.Adapter" CopyParameters="true">
+            ProjectName.NewModule.ExternalServices.SecondaryPort.Adapter\ProjectName.NewModule.ExternalServices.SecondaryPort.Adapter.vstemplate
+          </ProjectTemplateLink>
+          <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.Interop.SecondaryPort" CopyParameters="true">
+            ProjectName.NewModule.Interop.SecondaryPort\ProjectName.NewModule.Interop.SecondaryPort.vstemplate
+          </ProjectTemplateLink>
+          <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.Interop.SecondaryPort.Adapter" CopyParameters="true">
+            ProjectName.NewModule.Interop.SecondaryPort.Adapter\ProjectName.NewModule.Interop.SecondaryPort.Adapter.vstemplate
+          </ProjectTemplateLink>
+        </SolutionFolder>
+
+        <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.Bootstrap" CopyParameters="true">
+          ProjectName.NewModule.Bootstrap\ProjectName.NewModule.Bootstrap.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.Domain" CopyParameters="true">
+          ProjectName.NewModule.Domain\ProjectName.NewModule.Domain.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ReplaceParameters="true" ProjectName="$ApplicationName$.$NewModuleName$.Entities" CopyParameters="true">
+          ProjectName.NewModule.Entities\ProjectName.NewModule.Entities.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+    </ProjectCollection>
+    
+  </TemplateContent>
+</VSTemplate>
